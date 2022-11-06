@@ -1,0 +1,23 @@
+{
+  "name": "mon-portfolio",
+  "version": "1.0.0",
+  "description": "mon portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/scss/:./sass/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiorenzo84/Mon-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fiorenzo84/Mon-portfolio/issues"
+  },
+  "homepage": "https://github.com/fiorenzo84/Mon-portfolio#readme",
+  "dependencies": {
+    "sass": "^1.56.0"
+  }
+}

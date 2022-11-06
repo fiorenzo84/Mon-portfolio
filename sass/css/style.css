@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  object-fit: cover;
+}
+body .background-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* ----------NAVIGATION DESKTOP -----------*/
+.my-logo {
+  width: 160px;
+  height: 90px;
+}
+
+.my-logo:hover {
+  -webkit-animation: rotate-scale-up 0.8s linear both;
+  animation: rotate-scale-up 0.8s linear both;
+}
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
+.navbar-desktop {
+  position: absolute;
+  width: 100%;
+  margin-top: 25px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to top, #ffa800, #fffff0) no-repeat;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.navbar-desktop .line {
+  border: ridge #0f0801 0.3mm;
+  color: #0f0801;
+  width: 100%;
+  height: 3px;
+}
+
+.navbar-desktop--ul {
+  display: flex;
+  list-style-type: none;
+}
+.navbar-desktop--ul li {
+  width: 130px;
+  text-align: center;
+}
+.navbar-desktop--ul :nth-child(4) {
+  padding-right: 50px;
+}
+.navbar-desktop--ul a {
+  text-decoration: none;
+  color: #0f0801;
+  text-shadow: -1px 3px 4px #9d5a0b, 0 0 0em #9d5a0b, 0px 0px 0em white;
+}
+
+.navbar-desktop--ul a:hover {
+  color: #fffff0;
+  text-shadow: 1px 1px 2px black;
+  transition: ease-out 0.2s;
+}
+
+/* ----------NAVIGATION MOBILE -----------*/
+.navbar-mobile {
+  display: none;
+  position: fixed;
+  top: 9px;
+  right: 15px;
+  font-size: 2rem;
+}
+.navbar-mobile .navbar-mobile-list {
+  display: flex;
+  height: 70vh;
+  width: 35vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-mobile a {
+  font-size: 1.7rem;
+  padding: 1rem;
+  color: #fffff0;
+  text-shadow: 2px 6px 5px #0f0801, 0 0 0em #ff8e09, 0px 0px 0em white;
+  text-decoration: none;
+  letter-spacing: -3px;
+}
+.navbar-mobile i {
+  position: fixed;
+  z-index: 9999;
+  top: 30px;
+  right: 15px;
+  font-size: 3rem;
+  color: #ffa800;
+  cursor: pointer;
+}
+
+.modal {
+  background: linear-gradient(to top, #ffa800, #fffff0) no-repeat;
+  opacity: 1;
+  height: 70vh;
+  position: fixed;
+  right: -100vh;
+  width: 100%;
+}
+
+.change-modal {
+  transition: right 0.9s;
+  right: -20vh;
+  top: 0;
+  opacity: 0.95;
+  border-bottom-left-radius: 5px;
+}
+
+/* ---------- TITRE ACCUEIL -----------*/
+#contenair-title-and-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #ffa800;
+}
+#contenair-title-and-logo .title {
+  width: 190px;
+}
+#contenair-title-and-logo .line {
+  border: solid;
+  border-width: 0.3mm;
+  width: 15%;
+  height: 17%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+#contenair-title-and-logo p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+#contenair-title-and-logo .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 115px;
+  border-left: solid;
+  border-width: 0.5mm;
+}
+#contenair-title-and-logo .logo i {
+  color: #ffa800;
+}
+#contenair-title-and-logo .logo i:hover {
+  color: #0f0801;
+  text-shadow: 0px 0px 10px #ffa800, 0 0 0em #ffa800, 0px 0px 0em #0f0801;
+  transition: ease-in-out 0.4s;
+}
+
+/* -- Apparition du menu burger sous 700px -- */
+@media screen and (max-width: 700px) {
+  .navbar-desktop {
+    display: none;
+  }
+  .navbar-mobile {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
