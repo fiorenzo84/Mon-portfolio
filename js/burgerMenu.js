@@ -8,7 +8,7 @@ function toggleClassElements() {
   console.log("lancement modale et fermeture modale");
   modalBurger.classList.toggle("change-modal");
   iconeBurger.classList.toggle("fa-times");
-  //   myPicture.classList.toggle("display-myPicture");
+  myPicture.classList.toggle("display-myPicture");
 }
 
 export { toggleClassElements };

@@ -11,6 +11,9 @@
     <title>Florent Tuppo</title>
   </head>
   <body>
+    <div class="btnupArrow">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
     <header>
       <!-- navigation sur desktop -->
       <nav class="navbar-desktop">
@@ -21,7 +24,7 @@
         <span class="line"></span>
         <ul class="navbar-desktop--ul">
           <li><a href="#contenair-Apropos">À propos</a></li>
-          <li><a href="#contenair-skills">Compétences</a></li>
+          <li><a href="#contenair-skills">Skills</a></li>
           <li><a href="#">Projets</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -32,7 +35,7 @@
         <div class="modal">
           <div class="navbar-mobile-list">
             <a href="#contenair-Apropos">À propos</a>
-            <a href="#contenair-skills">Compétences</a>
+            <a href="#contenair-skills">Skills</a>
             <a href="#">Projets</a>
             <a href="#">Contact</a>
           </div>
@@ -65,14 +68,117 @@
     </section>
     <!-- --------------------------------------------------- -->
     <!-- SECTION A PROPOS -->
+    <section id="contenair-Apropos">
+      <h1>À propos</h1>
+      <img
+        src="./assets/maPhotoSansFond.png"
+        alt="photo de florent tuppo"
+        class="myPicture" />
+      <p>
+        <strong>Hello, je m'appelle Florent Tuppo</strong>
+        développeur web junior passionné<br />
+        par les technologies,<br />
+        je poursuis ma reconversion professionnelle et mon apprentissage très
+        passionnant aux métiers du numérique. <br />
+        Disponible et à l'écoute je sais m’adapter aux exigences de mes
+        nouvelles fonctions. <i class="fa-solid fa-code"></i>
+        <a href="./assets/FlorentTuppoCV.png" download="CV Florent Tuppo">
+          <button class="monCV">
+            Télécharger CV
+            <i class="fa-solid fa-download"></i>
+          </button>
+        </a>
+      </p>
+    </section>
     <!-- --------------------------------------------------- -->
     <!-- SECTION SKILLS -->
+    <section id="contenair-skills">
+      <img
+        src="./assets/backGroundSkills.jpg"
+        alt="image de fond"
+        class="background-img" />
+
+      <div class="contenair-title">
+        <h1>Skills</h1>
+        <span class="line"></span>
+      </div>
+      <!-- Block softskills -->
+      <div class="contenair-allSkills">
+        <div class="contenair-softSkills">
+          <div>
+            <h3>Soft Skills</h3>
+            <p>Autonomie</p>
+            <p>Rigueur</p>
+            <p>Curieux</p>
+            <p>Aisance relationnelles</p>
+            <p>Écoute et adaptabilité</p>
+            <p>Travail en équipe</p>
+          </div>
+          <i class="fa-solid fa-circle-nodes"></i>
+        </div>
+        <!-- Block hardskills -->
+        <div class="contenair-hardSkills">
+          <div class="titleLogo">
+            <h3>Hard Skills</h3>
+            <i class="fa-solid fa-laptop"></i>
+          </div>
+          <div class="langages">
+            <h5>Langages</h5>
+            <div class="langages-logo">
+              <span>
+                <i class="fa-brands fa-html5"></i>
+              </span>
+
+              <span>
+                <i class="fa-brands fa-css3-alt"></i>
+              </span>
+              <span>
+                <i class="fa-brands fa-square-js"></i>
+              </span>
+              <span>
+                <i class="fa-brands fa-sass"></i>
+              </span>
+            </div>
+          </div>
+          <div class="versionning">
+            <h5>Versionning</h5>
+            <span>
+              <i class="fa-brands fa-square-git"></i>
+            </span>
+            <span>
+              <i class="fa-brands fa-square-github"></i>
+            </span>
+          </div>
+          <div class="frameworks">
+            <h5>Frameworks</h5>
+            <span>
+              <i class="fa-brands fa-react"></i>
+            </span>
+            <span>
+              <i class="fa-brands fa-vuejs"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- --------------------------------------------------- -->
     <!-- SECTION PROJETS-->
     <!-- --------------------------------------------------- -->
     <!-- SECTION CONTACT-->
     <!-- --------------------------------------------------- -->
     <!-- FOOTER -->
+    <footer>
+      <div class="contenair-socialMediaLogo">
+        <a href="https://github.com/fiorenzo84">
+          <i class="fa-brands fa-square-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/florent-tuppo/">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <p>©2022 tous droits réservés</p>
+    </footer>
+    <!-- --------------------------------------------------- -->
     <script type="module" src="index.js"></script>
   </body>
 </html>

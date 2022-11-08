@@ -1,0 +1,118 @@
+#contenair-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    .background-img {
+        filter: contrast(0.6);
+    }
+    .contenair-title {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5px 0px;
+        margin: 15px 150px 0px 0px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        background: $black;
+        color: $orange;
+        width: 75%;
+        .line {
+            border-bottom: solid; 
+            height: min-content;
+            border: solid;
+            border-width: 0.3mm;
+            width: 60%;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin-left: 10px;
+        }
+    }
+    .contenair-allSkills {
+        height: 100vh;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        .contenair-softSkills {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include skillsStyleContenair;
+            div {
+                width: 100%;
+            }
+            h3 {
+               @include skillsTitle;
+            }
+            p {
+                font-size: smaller;
+                padding: 3px;
+                text-align: center;
+            }
+            i {
+                @include skillsStyleLogoTitle
+            }
+        }
+        .contenair-hardSkills {
+            @include skillsStyleContenair;
+            .titleLogo {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h3 {
+                    @include skillsTitle;
+                }
+
+                i {
+                    @include skillsStyleLogoTitle
+                }
+            }
+      
+            .fa-html5 {
+                font-size: 30px;
+                margin: 10px;
+                color: #e34c26;
+            }
+            .fa-css3-alt {
+                font-size: 30px;
+                margin: 10px;
+                color: #264de4;
+            }
+            .fa-square-js {
+                font-size: 30px;
+                margin: 10px;
+                color: #d8c72f;
+            }
+            .fa-sass {
+                font-size: 30px;
+                margin: 10px;
+                color: #cc6699;
+            }
+            .fa-square-git {
+                font-size: 30px;
+                margin: 10px;
+                color: #f34f29;
+            }
+            .fa-square-github {
+                font-size: 30px;
+                margin: 10px;
+                color: #171515;
+            }
+            .fa-react {
+                font-size: 30px;
+                margin: 10px;
+                color: #61dbfb;
+            }
+            .fa-vuejs {
+                font-size: 30px;
+                margin: 10px;
+                color:#41b883;
+            }
+        }
+    }
+}

@@ -1,4 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+.monCV {
+  cursor: pointer;
+  border: none;
+  font-style: italic;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 140px;
+  height: 35px;
+  color: #0f0801;
+  font-family: "Raleway";
+  background: linear-gradient(to top, #ffa800, #fffff0) no-repeat;
+  margin-top: 15px;
+}
+.monCV:hover {
+  background: #ffa800;
+  box-shadow: 0px 0px 15px #0f0801;
+  transition: ease-out 0.7s;
+}
+.monCV i {
+  margin: 4px;
+}
+
+.btnupArrow i {
+  font-size: 1.2rem;
+  color: #0f0801;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #ffa800;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 50%;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
 *,
 ::before,
 ::after {
@@ -118,17 +157,16 @@ body .background-img {
   justify-content: center;
 }
 .navbar-mobile a {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   padding: 1rem;
   color: #fffff0;
   text-shadow: 2px 6px 5px #0f0801, 0 0 0em #ff8e09, 0px 0px 0em white;
   text-decoration: none;
-  letter-spacing: -3px;
 }
 .navbar-mobile i {
   position: fixed;
   z-index: 9999;
-  top: 30px;
+  top: 10px;
   right: 15px;
   font-size: 3rem;
   color: #ffa800;
@@ -205,6 +243,204 @@ body .background-img {
   .navbar-mobile {
     display: block;
   }
+}
+/* ---------- SECTION A PROPOS ---------------- */
+#contenair-Apropos {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+}
+#contenair-Apropos h1 {
+  text-align: center;
+  padding: 5px 0px;
+  margin: 15px 150px 0px 0px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background: linear-gradient(to top, #ffa800, #fffff0) no-repeat;
+  width: 95%;
+}
+#contenair-Apropos p {
+  color: #0f0801;
+  font-weight: 300;
+  margin: 0px 45px 45px 45px;
+  line-height: 25px;
+}
+#contenair-Apropos p i {
+  color: #0f0801;
+  margin: 5px;
+}
+#contenair-Apropos .myPicture {
+  filter: drop-shadow(0px 0px 40px #ffa800);
+  width: 140px;
+  border-radius: 5%;
+}
+#contenair-Apropos .display-myPicture {
+  opacity: 0.1;
+}
+
+#contenair-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+#contenair-skills .background-img {
+  filter: contrast(0.6);
+}
+#contenair-skills .contenair-title {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 0px;
+  margin: 15px 150px 0px 0px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #0f0801;
+  color: #ffa800;
+  width: 75%;
+}
+#contenair-skills .contenair-title .line {
+  border-bottom: solid;
+  height: min-content;
+  border: solid;
+  border-width: 0.3mm;
+  width: 60%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-left: 10px;
+}
+#contenair-skills .contenair-allSkills {
+  height: 100vh;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+#contenair-skills .contenair-allSkills .contenair-softSkills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to top, #ffa800, #fffff0) no-repeat;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 15px black;
+}
+#contenair-skills .contenair-allSkills .contenair-softSkills div {
+  width: 100%;
+}
+#contenair-skills .contenair-allSkills .contenair-softSkills h3 {
+  font-weight: normal;
+  font-style: italic;
+  padding: 5px;
+  text-shadow: -1px 3px 4px #9d5a0b, 0 0 0em #9d5a0b, 0px 0px 0em white;
+}
+#contenair-skills .contenair-allSkills .contenair-softSkills p {
+  font-size: smaller;
+  padding: 3px;
+  text-align: center;
+}
+#contenair-skills .contenair-allSkills .contenair-softSkills i {
+  font-size: 50px;
+  border: solid;
+  border-radius: 20px;
+  color: #ffa800;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px;
+}
+#contenair-skills .contenair-allSkills .contenair-hardSkills {
+  background: linear-gradient(to top, #ffa800, #fffff0) no-repeat;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 15px black;
+}
+#contenair-skills .contenair-allSkills .contenair-hardSkills .titleLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contenair-skills .contenair-allSkills .contenair-hardSkills .titleLogo h3 {
+  font-weight: normal;
+  font-style: italic;
+  padding: 5px;
+  text-shadow: -1px 3px 4px #9d5a0b, 0 0 0em #9d5a0b, 0px 0px 0em white;
+}
+#contenair-skills .contenair-allSkills .contenair-hardSkills .titleLogo i {
+  font-size: 50px;
+  border: solid;
+  border-radius: 20px;
+  color: #ffa800;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px;
+}
+#contenair-skills .contenair-allSkills .contenair-hardSkills .fa-html5 {
+  font-size: 30px;
+  margin: 10px;
+  color: #e34c26;
+}
+#contenair-skills .contenair-allSkills .contenair-hardSkills .fa-css3-alt {
+  font-size: 30px;
+  margin: 10px;
+  color: #264de4;
+}
+#contenair-skills .contenair-allSkills .contenair-hardSkills .fa-square-js {
+  font-size: 30px;
+  margin: 10px;
+  color: #d8c72f;
+}
+#contenair-skills .contenair-allSkills .contenair-hardSkills .fa-sass {
+  font-size: 30px;
+  margin: 10px;
+  color: #cc6699;
+}
+#contenair-skills .contenair-allSkills .contenair-hardSkills .fa-square-git {
+  font-size: 30px;
+  margin: 10px;
+  color: #f34f29;
+}
+#contenair-skills .contenair-allSkills .contenair-hardSkills .fa-square-github {
+  font-size: 30px;
+  margin: 10px;
+  color: #171515;
+}
+#contenair-skills .contenair-allSkills .contenair-hardSkills .fa-react {
+  font-size: 30px;
+  margin: 10px;
+  color: #61dbfb;
+}
+#contenair-skills .contenair-allSkills .contenair-hardSkills .fa-vuejs {
+  font-size: 30px;
+  margin: 10px;
+  color: #41b883;
+}
+
+footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3rem;
+  padding: 10px;
+  background-color: #0f0801;
+  height: 85px;
+}
+footer a {
+  text-decoration: none;
+  color: #ffa800;
+}
+footer p {
+  padding: 10px;
+  font-size: 10px;
+  color: #fffff0;
 }
 
 /*# sourceMappingURL=style.css.map */

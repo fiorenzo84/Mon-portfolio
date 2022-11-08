@@ -66,17 +66,16 @@
         justify-content: center;
       }
     & a {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         padding: 1rem;
         color: $whiteIvoire;
         text-shadow: $textShadowForText;
         text-decoration: none;
-        letter-spacing: -3px;
     }
     & i {
         position: fixed;
         z-index: 9999;
-        top: 30px;
+        top: 10px;
         right: 15px;
         font-size: 3rem;
         color: $orange;

@@ -1,0 +1,21 @@
+footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem; 
+    padding: 10px;
+    background-color: $black;
+    height: 85px;
+    a {
+        text-decoration: none;
+        color: $orange;
+    }
+    p {
+        padding: 10px;
+        font-size: 10px;
+        color: $whiteIvoire;
+    }
+}
