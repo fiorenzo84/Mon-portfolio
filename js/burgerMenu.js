@@ -1,14 +1,17 @@
+/*-----------------affichage de la modale latérale de navigation (cache ma photo et le description des projets)----------------------*/
 const iconeBurger = document.querySelector(".navbar-mobile i");
 const modalBurger = document.querySelector(".modal");
 const myPicture = document.querySelector(".myPicture");
+const descriptionProjects = document.querySelectorAll(".text-center");
 
-// fonction changement de class d'icone et affiche la modale
 iconeBurger.addEventListener("click", toggleClassElements);
 function toggleClassElements() {
-  console.log("lancement modale et fermeture modale");
   modalBurger.classList.toggle("change-modal");
   iconeBurger.classList.toggle("fa-times");
-  myPicture.classList.toggle("display-myPicture");
+  myPicture.classList.toggle("remove-myPicture");
+  descriptionProjects.forEach((element) => {
+    element.classList.toggle("remove-descriptif");
+  });
 }
 
 export { toggleClassElements };

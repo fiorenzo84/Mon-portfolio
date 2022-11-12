@@ -49,7 +49,7 @@
 body {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  object-fit: cover;
+  width: 100%;
 }
 body .background-img {
   position: absolute;
@@ -193,7 +193,7 @@ body .background-img {
 /* ---------- TITRE ACCUEIL -----------*/
 #contenair-title-and-logo {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   font-size: 2rem;
@@ -201,19 +201,26 @@ body .background-img {
   color: #ffa800;
 }
 #contenair-title-and-logo .title {
-  width: 190px;
+  border-top-left-radius: 10px;
+  padding: 17px;
+  text-align: center;
+  box-shadow: -20px -15px 20px rgba(0, 0, 0, 0.46);
+}
+#contenair-title-and-logo h1 {
+  text-shadow: 0px 10px 6px black;
 }
 #contenair-title-and-logo .line {
   border: solid;
   border-width: 0.3mm;
-  width: 15%;
+  width: 5%;
   height: 17%;
   border-top: none;
   border-left: none;
   border-right: none;
 }
 #contenair-title-and-logo p {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  padding: 5px;
   font-weight: bold;
 }
 #contenair-title-and-logo .logo {
@@ -222,7 +229,6 @@ body .background-img {
   align-items: center;
   justify-content: center;
   width: 40px;
-  height: 115px;
   border-left: solid;
   border-width: 0.5mm;
 }
@@ -244,12 +250,25 @@ body .background-img {
     display: block;
   }
 }
+@media screen and (min-width: 701px) {
+  #contenair-skills .contenair-allSkills .contenair-softSkills {
+    margin-right: 250px;
+  }
+  #contenair-skills .contenair-allSkills .contenair-hardSkills {
+    margin-left: 250px;
+  }
+}
 /* ---------- SECTION A PROPOS ---------------- */
 #contenair-Apropos {
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
+  align-items: center;
+}
+#contenair-Apropos div {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 #contenair-Apropos h1 {
@@ -259,12 +278,12 @@ body .background-img {
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   background: linear-gradient(to top, #ffa800, #fffff0) no-repeat;
-  width: 95%;
+  width: 100%;
 }
 #contenair-Apropos p {
   color: #0f0801;
   font-weight: 300;
-  margin: 0px 45px 45px 45px;
+  margin: 45px 45px;
   line-height: 25px;
 }
 #contenair-Apropos p i {
@@ -276,7 +295,7 @@ body .background-img {
   width: 140px;
   border-radius: 5%;
 }
-#contenair-Apropos .display-myPicture {
+#contenair-Apropos .remove-myPicture {
   opacity: 0.1;
 }
 
@@ -318,7 +337,7 @@ body .background-img {
   justify-content: space-around;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 20px;
 }
 #contenair-skills .contenair-allSkills .contenair-softSkills {
   display: flex;
@@ -326,7 +345,6 @@ body .background-img {
   justify-content: space-between;
   background: linear-gradient(to top, #ffa800, #fffff0) no-repeat;
   padding: 15px;
-  margin: 15px;
   border-radius: 10px;
   box-shadow: 0px 15px 15px black;
 }
@@ -356,7 +374,6 @@ body .background-img {
 #contenair-skills .contenair-allSkills .contenair-hardSkills {
   background: linear-gradient(to top, #ffa800, #fffff0) no-repeat;
   padding: 15px;
-  margin: 15px;
   border-radius: 10px;
   box-shadow: 0px 15px 15px black;
 }
@@ -421,6 +438,133 @@ body .background-img {
   color: #41b883;
 }
 
+#contenair-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#contenair-projects .contenair-title-projects {
+  background: #ffa800;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 0px;
+  margin: 15px 150px 0px 0px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #fffff0;
+  width: 75%;
+}
+#contenair-projects .contenair-title-projects .line {
+  border-bottom: solid;
+  height: min-content;
+  border: solid;
+  border-width: 0.3mm;
+  width: 55%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-left: 10px;
+}
+#contenair-projects .contenair-cards-projects {
+  display: flex;
+  flex-direction: column;
+}
+#contenair-projects .contenair-cards-projects .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background-size: cover;
+  margin: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px #0f0801;
+}
+#contenair-projects .contenair-cards-projects .cards .styleBackground {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: solid;
+  border-color: #fffff0;
+}
+#contenair-projects .contenair-cards-projects .cards .text-center {
+  font-size: 1.2rem;
+  text-shadow: 2px 6px 5px #0f0801;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffa800;
+  border-radius: 5px;
+  padding: 10px;
+}
+#contenair-projects .contenair-cards-projects .cards .remove-descriptif {
+  z-index: -1;
+}
+#contenair-projects .contenair-cards-projects .cards .contenair-logo {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+#contenair-projects .contenair-cards-projects .cards .contenair-logo a {
+  text-decoration: none;
+  margin: 5px;
+  color: #ffa800;
+}
+#contenair-projects .contenair-cards-projects .cards .contenair-logo a i {
+  font-size: 25px;
+  width: 60px;
+  border: solid;
+  padding: 8px;
+  border-radius: 15px;
+}
+#contenair-projects .contenair-cards-projects .cards .contenair-logo a i:hover {
+  color: #0f0801;
+  transition: all 0.5s;
+}
+
+#contenair-contact {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contenair-contact .background-img {
+  height: 20vh;
+}
+#contenair-contact .contenair-title-contact {
+  margin-top: 35px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  color: #ffa800;
+  width: 100%;
+}
+#contenair-contact .contenair-title-contact .line {
+  border-bottom: solid;
+  height: min-content;
+  border: solid;
+  border-width: 0.3mm;
+  width: 30%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+#contenair-contact div {
+  color: #ffa800;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+}
+#contenair-contact div p {
+  letter-spacing: 1px;
+}
+#contenair-contact div i {
+  font-size: 30px;
+  padding: 5px;
+}
+
 footer {
   left: 0;
   right: 0;
@@ -428,10 +572,11 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   font-size: 1.3rem;
   padding: 10px;
   background-color: #0f0801;
-  height: 85px;
+  height: 90px;
 }
 footer a {
   text-decoration: none;

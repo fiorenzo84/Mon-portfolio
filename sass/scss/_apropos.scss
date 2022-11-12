@@ -6,6 +6,12 @@
   justify-content: space-between;
   align-items: center;
 
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
     h1 {
       text-align: center;
       padding: 5px 0px;
@@ -13,14 +19,15 @@
       border-bottom-right-radius: 10px;
       border-top-right-radius: 10px;
       background: $whiteOrange;
-      width: 95%;
+      width: 100%;
   }
 
     p {
       color: $black;
       font-weight: 300;
-      margin: 0px 45px 45px 45px;
+      margin:  45px 45px;
       line-height: 25px;
+      
       i {
           color: $black;
           margin: 5px;
@@ -33,7 +40,7 @@
       border-radius: 5%;
     }
 
-    .display-myPicture {
+    .remove-myPicture {
      opacity: 0.1;
     }
 

@@ -1,7 +1,12 @@
+/*---------------------masque la flèche quand on arrive sur l'accueil------------------------*/
 const btnArrow = document.querySelector(".btnupArrow");
-// const body = document.querySelector("body");
-// btnArrow.style.opacity = "0";
+btnArrow.style.opacity = "0";
 
+window.addEventListener("scroll", () => {
+  btnArrow.style.opacity = "1";
+});
+
+/*---------------------flèche qui remonte document------------------------*/
 btnArrow.addEventListener("click", getArrowUpWindow);
 function getArrowUpWindow() {
   window.scrollTo({

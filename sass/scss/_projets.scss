@@ -1,0 +1,96 @@
+#contenair-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .contenair-title-projects {
+        background: $orange;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5px 0px;
+        margin: 15px 150px 0px 0px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        color: $whiteIvoire;
+        width: 75%;
+
+        .line {
+            border-bottom: solid;
+            height: min-content;
+            border: solid;
+            border-width: 0.3mm;
+            width: 55%;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin-left: 10px;
+        }
+    }
+
+    .contenair-cards-projects{
+        display: flex;
+        flex-direction: column;
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+            background-size: cover;
+            margin: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px $black;
+
+            .styleBackground {
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                border: solid;
+                border-color: $whiteIvoire;
+            }
+
+            .text-center {
+                font-size: 1.2rem;
+                text-shadow: 2px 6px 5px #0f0801;
+                background: #00000066;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $orange;
+                border-radius: 5px;
+                padding: 10px;
+            }
+
+            .remove-descriptif {
+                z-index: -1;
+            }
+            
+            .contenair-logo {
+                align-content: center;
+                display: flex;
+                justify-content: center;
+
+                a {
+                    text-decoration: none;
+                    margin: 5px;
+                    color: #ffa800;
+            
+                    i {
+                        font-size: 25px;
+                        width: 60px;
+                        border: solid;
+                        padding: 8px;
+                        border-radius: 15px;
+                    }
+                    
+                    i:hover {
+                        color: $black;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }  
+    }
+}
+

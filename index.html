@@ -25,8 +25,8 @@
         <ul class="navbar-desktop--ul">
           <li><a href="#contenair-Apropos">À propos</a></li>
           <li><a href="#contenair-skills">Skills</a></li>
-          <li><a href="#">Projets</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contenair-projects">Projets</a></li>
+          <li><a href="#contenair-contact">Contact</a></li>
         </ul>
       </nav>
       <!-- navigation sur smartphone (menu burger) -->
@@ -36,8 +36,8 @@
           <div class="navbar-mobile-list">
             <a href="#contenair-Apropos">À propos</a>
             <a href="#contenair-skills">Skills</a>
-            <a href="#">Projets</a>
-            <a href="#">Contact</a>
+            <a href="#contenair-projects">Projets</a>
+            <a href="#contenair-contact">Contact</a>
           </div>
         </div>
       </div>
@@ -70,25 +70,27 @@
     <!-- SECTION A PROPOS -->
     <section id="contenair-Apropos">
       <h1>À propos</h1>
-      <img
-        src="./assets/maPhotoSansFond.png"
-        alt="photo de florent tuppo"
-        class="myPicture" />
-      <p>
-        <strong>Hello, je m'appelle Florent Tuppo</strong>
-        développeur web junior passionné<br />
-        par les technologies,<br />
-        je poursuis ma reconversion professionnelle et mon apprentissage très
-        passionnant aux métiers du numérique. <br />
-        Disponible et à l'écoute je sais m’adapter aux exigences de mes
-        nouvelles fonctions. <i class="fa-solid fa-code"></i>
-        <a href="./assets/Florent.TuppoCV.png" download="CV Florent Tuppo">
-          <button class="monCV">
-            Télécharger CV
-            <i class="fa-solid fa-download"></i>
-          </button>
-        </a>
-      </p>
+      <div>
+        <img
+          src="./assets/maPhotoSansFond.png"
+          alt="photo de florent tuppo"
+          class="myPicture" />
+        <p>
+          <strong>Hello, je m'appelle Florent Tuppo</strong>
+          développeur web junior passionné<br />
+          par les technologies,<br />
+          je poursuis ma reconversion professionnelle et mon apprentissage très
+          passionnant aux métiers du numérique. <br />
+          Disponible et à l'écoute je sais m’adapter aux exigences de mes
+          nouvelles fonctions. <i class="fa-solid fa-code"></i>
+          <a href="./assets/Florent.TuppoCV.png" download="CV Florent Tuppo">
+            <button class="monCV">
+              Télécharger CV
+              <i class="fa-solid fa-download"></i>
+            </button>
+          </a>
+        </p>
+      </div>
     </section>
     <!-- --------------------------------------------------- -->
     <!-- SECTION SKILLS -->
@@ -163,8 +165,30 @@
     </section>
     <!-- --------------------------------------------------- -->
     <!-- SECTION PROJETS-->
+    <section id="contenair-projects">
+      <div class="contenair-title-projects">
+        <span class="line"></span>
+        <h1>Projets</h1>
+      </div>
+      <article class="contenair-cards-projects"></article>
+    </section>
     <!-- --------------------------------------------------- -->
     <!-- SECTION CONTACT-->
+    <section id="contenair-contact">
+      <img
+        src="./assets/backGround.png"
+        alt="image de fond"
+        class="background-img" />
+      <div class="contenair-title-contact">
+        <span class="line"></span>
+        <h1>Contact</h1>
+        <span class="line"></span>
+      </div>
+      <div>
+        <i class="fa-solid fa-envelope"></i>
+        <p>Email : florent.tuppo@gmail.com</p>
+      </div>
+    </section>
     <!-- --------------------------------------------------- -->
     <!-- FOOTER -->
     <footer>
@@ -180,5 +204,6 @@
     </footer>
     <!-- --------------------------------------------------- -->
     <script type="module" src="index.js"></script>
+    <script src="./js/cards.js"></script>
   </body>
 </html>

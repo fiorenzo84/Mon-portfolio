@@ -8,3 +8,12 @@
       display: block;
     }
   }
+
+@media screen and (min-width: 701px){
+  #contenair-skills .contenair-allSkills .contenair-softSkills {
+    margin-right: 250px;
+  }
+  #contenair-skills .contenair-allSkills .contenair-hardSkills {
+    margin-left: 250px;
+  }
+}
