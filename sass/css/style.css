@@ -1,24 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 .monCV {
-  cursor: pointer;
-  border: none;
-  font-style: italic;
-  font-weight: bold;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  width: 140px;
-  height: 35px;
+  border-radius: 50px;
   color: #0f0801;
   font-family: "Raleway";
-  background: linear-gradient(to top, #ffa800, #fffff0) no-repeat;
+  background: #ffa800;
   margin-top: 15px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: oblique;
 }
 .monCV:hover {
-  background: #ffa800;
-  box-shadow: 0px 0px 15px #0f0801;
-  transition: ease-out 0.7s;
+  color: black;
+  background: #ffcf73;
+  box-shadow: 0px 0px 5px #0f0801;
+  transition: ease-out 0.5s;
+  font-weight: normal;
 }
 .monCV i {
   margin: 4px;
@@ -31,7 +29,7 @@
   bottom: 0;
   right: 0;
   background-color: #ffa800;
-  padding: 20px;
+  padding: 15px;
   margin: 15px;
   border-radius: 50%;
   opacity: 0.6;
@@ -49,7 +47,6 @@
 body {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  width: 100%;
 }
 body .background-img {
   position: absolute;
@@ -150,7 +147,7 @@ body .background-img {
 }
 .navbar-mobile .navbar-mobile-list {
   display: flex;
-  height: 70vh;
+  height: 50vh;
   width: 35vh;
   flex-direction: column;
   align-items: center;
@@ -159,8 +156,7 @@ body .background-img {
 .navbar-mobile a {
   font-size: 1.4rem;
   padding: 1rem;
-  color: #fffff0;
-  text-shadow: 2px 6px 5px #0f0801, 0 0 0em #ff8e09, 0px 0px 0em white;
+  color: #0f0801;
   text-decoration: none;
 }
 .navbar-mobile i {
@@ -176,7 +172,7 @@ body .background-img {
 .modal {
   background: linear-gradient(to top, #ffa800, #fffff0) no-repeat;
   opacity: 1;
-  height: 70vh;
+  height: 50vh;
   position: fixed;
   right: -100vh;
   width: 100%;
@@ -251,49 +247,98 @@ body .background-img {
   }
 }
 @media screen and (min-width: 701px) {
+  #contenair-Apropos {
+    padding-top: 10px;
+    display: flex;
+    align-content: center;
+  }
+  #contenair-Apropos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    margin: 50px 75px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #ffa800, #fffff0) no-repeat;
+  }
+  #contenair-Apropos div h4 {
+    width: 94%;
+  }
+  #contenair-skills .contenair-allSkills {
+    padding: 80px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   #contenair-skills .contenair-allSkills .contenair-softSkills {
-    margin-right: 250px;
+    height: 50%;
+    width: 80%;
   }
   #contenair-skills .contenair-allSkills .contenair-hardSkills {
-    margin-left: 250px;
+    height: 80%;
+    width: 100%;
+  }
+  #contenair-skills .contenair-allSkills .contenair-hardSkills .allContenairLogo {
+    height: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  #contenair-skills .contenair-allSkills .contenair-hardSkills .allContenairLogo .langages-logo {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+  }
+  #contenair-skills .contenair-allSkills .contenair-hardSkills .allContenairLogo .versionning {
+    display: flex;
+    flex-direction: column;
+  }
+  #contenair-skills .contenair-allSkills .contenair-hardSkills .allContenairLogo .frameworks {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+  }
+  #contenair-skills .contenair-allSkills .contenair-hardSkills .allContenairLogo h5 > span {
+    font-size: 10px;
+  }
+  #contenair-projects .contenair-cards-projects {
+    display: flex;
+    flex-wrap: wrap;
+    height: 75vh;
+    align-items: center;
+  }
+  .cards {
+    width: 290px;
   }
 }
 /* ---------- SECTION A PROPOS ---------------- */
 #contenair-Apropos {
-  display: flex;
-  flex-direction: column;
   height: 100vh;
-  justify-content: space-between;
-  align-items: center;
 }
 #contenair-Apropos div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#contenair-Apropos h1 {
   text-align: center;
-  padding: 5px 0px;
-  margin: 15px 150px 0px 0px;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-  background: linear-gradient(to top, #ffa800, #fffff0) no-repeat;
-  width: 100%;
 }
-#contenair-Apropos p {
+#contenair-Apropos div h4 {
+  margin: 50px 0px 5px 30px;
+  text-align: start;
+}
+#contenair-Apropos div p {
   color: #0f0801;
   font-weight: 300;
-  margin: 45px 45px;
+  margin: 0px 30px 0px 30px;
   line-height: 25px;
+  text-align: start;
 }
-#contenair-Apropos p i {
+#contenair-Apropos div p i {
   color: #0f0801;
   margin: 5px;
 }
 #contenair-Apropos .myPicture {
   filter: drop-shadow(0px 0px 40px #ffa800);
-  width: 140px;
+  width: 170px;
   border-radius: 5%;
+  margin-top: 40px;
 }
 #contenair-Apropos .remove-myPicture {
   opacity: 0.1;
@@ -305,9 +350,6 @@ body .background-img {
   justify-content: space-between;
   height: 100vh;
 }
-#contenair-skills .background-img {
-  filter: contrast(0.6);
-}
 #contenair-skills .contenair-title {
   display: flex;
   text-align: center;
@@ -317,7 +359,7 @@ body .background-img {
   margin: 15px 150px 0px 0px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
-  background: #0f0801;
+  background: #5c2e00;
   color: #ffa800;
   width: 75%;
 }
@@ -334,114 +376,109 @@ body .background-img {
 }
 #contenair-skills .contenair-allSkills {
   height: 100vh;
-  justify-content: space-around;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
 }
 #contenair-skills .contenair-allSkills .contenair-softSkills {
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(to top, #ffa800, #fffff0) no-repeat;
-  padding: 15px;
+  background: linear-gradient(to top, rgba(255, 168, 0, 0.5803921569), rgba(255, 255, 255, 0.5607843137)) no-repeat;
+  margin: 20px;
   border-radius: 10px;
   box-shadow: 0px 15px 15px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+#contenair-skills .contenair-allSkills .contenair-softSkills h3 {
+  color: #5c2e00;
+  text-shadow: 0px 2px 2px #ffa800;
 }
 #contenair-skills .contenair-allSkills .contenair-softSkills div {
   width: 100%;
 }
-#contenair-skills .contenair-allSkills .contenair-softSkills h3 {
-  font-weight: normal;
-  font-style: italic;
-  padding: 5px;
-  text-shadow: -1px 3px 4px #9d5a0b, 0 0 0em #9d5a0b, 0px 0px 0em white;
-}
 #contenair-skills .contenair-allSkills .contenair-softSkills p {
   font-size: smaller;
-  padding: 3px;
-  text-align: center;
-}
-#contenair-skills .contenair-allSkills .contenair-softSkills i {
-  font-size: 50px;
-  border: solid;
-  border-radius: 20px;
-  color: #ffa800;
-  padding: 10px;
-  margin: 10px;
-  box-shadow: 0 0 10px;
+  padding: 0px 0px 5px 20px;
+  width: 100%;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills {
-  background: linear-gradient(to top, #ffa800, #fffff0) no-repeat;
-  padding: 15px;
+  background: linear-gradient(to top, rgba(255, 168, 0, 0.5803921569), rgba(255, 255, 255, 0.5607843137)) no-repeat;
+  margin: 20px;
   border-radius: 10px;
   box-shadow: 0px 15px 15px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .titleLogo {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .titleLogo h3 {
-  font-weight: normal;
-  font-style: italic;
-  padding: 5px;
-  text-shadow: -1px 3px 4px #9d5a0b, 0 0 0em #9d5a0b, 0px 0px 0em white;
+  padding: 10px 0px;
+  color: #5c2e00;
+  text-shadow: 0px 2px 2px #ffa800;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .titleLogo i {
-  font-size: 50px;
-  border: solid;
-  border-radius: 20px;
-  color: #ffa800;
+  font-size: 30px;
+  border-radius: 10px;
   padding: 10px;
-  margin: 10px;
-  box-shadow: 0 0 10px;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .fa-html5 {
-  font-size: 30px;
+  font-size: 40px;
   margin: 10px;
+  text-shadow: 0px 2px 2px #0f0801;
   color: #e34c26;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .fa-css3-alt {
-  font-size: 30px;
+  font-size: 40px;
   margin: 10px;
+  text-shadow: 0px 2px 2px #0f0801;
   color: #264de4;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .fa-square-js {
-  font-size: 30px;
+  font-size: 40px;
   margin: 10px;
+  text-shadow: 0px 2px 2px #0f0801;
   color: #d8c72f;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .fa-sass {
-  font-size: 30px;
+  font-size: 40px;
   margin: 10px;
+  text-shadow: 0px 2px 2px #0f0801;
   color: #cc6699;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .fa-square-git {
-  font-size: 30px;
+  font-size: 40px;
   margin: 10px;
+  text-shadow: 0px 2px 2px #0f0801;
   color: #f34f29;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .fa-square-github {
-  font-size: 30px;
+  font-size: 40px;
   margin: 10px;
+  text-shadow: 0px 2px 2px #0f0801;
   color: #171515;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .fa-react {
-  font-size: 30px;
+  font-size: 40px;
   margin: 10px;
+  text-shadow: 0px 2px 2px #0f0801;
   color: #61dbfb;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .fa-vuejs {
-  font-size: 30px;
+  font-size: 40px;
   margin: 10px;
+  text-shadow: 0px 2px 2px #0f0801;
   color: #41b883;
 }
 
 #contenair-projects {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 #contenair-projects .contenair-title-projects {
   background: #ffa800;
@@ -474,7 +511,7 @@ body .background-img {
 #contenair-projects .contenair-cards-projects .cards {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
   background-size: cover;
   margin: 25px;
@@ -484,8 +521,7 @@ body .background-img {
 #contenair-projects .contenair-cards-projects .cards .styleBackground {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  border: solid;
-  border-color: #fffff0;
+  height: 100%;
 }
 #contenair-projects .contenair-cards-projects .cards .text-center {
   font-size: 1.2rem;
@@ -523,48 +559,6 @@ body .background-img {
   transition: all 0.5s;
 }
 
-#contenair-contact {
-  height: 20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#contenair-contact .background-img {
-  height: 20vh;
-}
-#contenair-contact .contenair-title-contact {
-  margin-top: 35px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: space-around;
-  color: #ffa800;
-  width: 100%;
-}
-#contenair-contact .contenair-title-contact .line {
-  border-bottom: solid;
-  height: min-content;
-  border: solid;
-  border-width: 0.3mm;
-  width: 30%;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-}
-#contenair-contact div {
-  color: #ffa800;
-  font-weight: normal;
-  display: flex;
-  align-items: center;
-}
-#contenair-contact div p {
-  letter-spacing: 1px;
-}
-#contenair-contact div i {
-  font-size: 30px;
-  padding: 5px;
-}
-
 footer {
   left: 0;
   right: 0;
@@ -572,20 +566,51 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   font-size: 1.3rem;
+  margin-top: 30px;
+  height: 170px;
+  background-color: rgba(255, 207, 0, 0.1019607843);
+  box-shadow: 2px 6px 5px #0f0801, 0 0 0em #ff8e09, 0px 0px 0em white;
+}
+footer .background-img-footer {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  object-fit: cover;
+  z-index: -1;
+}
+footer h2 {
+  color: #ffa800;
   padding: 10px;
-  background-color: #0f0801;
-  height: 90px;
+  font-size: 1.5rem;
+  text-shadow: 2px 7px 5px #000000, 0 0 0em rgba(0, 0, 0, 0), 0px 0px 0em black;
+}
+footer div {
+  display: flex;
+  align-items: center;
+}
+footer div i {
+  color: #ffa800;
+}
+footer .mail {
+  padding: 10px;
+  font-size: 13px;
+  color: #fffff0;
+}
+footer .contenair-socialMediaLogo {
+  width: 60px;
+  justify-content: space-around;
+  padding: 8px;
 }
 footer a {
   text-decoration: none;
   color: #ffa800;
 }
-footer p {
-  padding: 10px;
-  font-size: 10px;
+footer .droit {
+  font-size: 8px;
   color: #fffff0;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

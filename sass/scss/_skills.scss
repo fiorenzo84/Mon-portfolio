@@ -3,9 +3,6 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    .background-img {
-        filter: contrast(0.6);
-    }
     .contenair-title {
         display: flex;
         text-align: center;
@@ -15,7 +12,7 @@
         margin: 15px 150px 0px 0px;
         border-bottom-right-radius: 10px;
         border-top-right-radius: 10px;
-        background: $black;
+        background: #5c2e00;
         color: $orange;
         width: 75%;
         .line {
@@ -32,29 +29,23 @@
     }
     .contenair-allSkills {
         height: 100vh;
-        justify-content: space-around;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-
         .contenair-softSkills {
+            padding: 10px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             @include skillsStyleContenair;
+            h3 {
+                color: #5c2e00;
+                text-shadow: 0px 2px 2px $orange;
+            }
             div {
                 width: 100%;
             }
-            h3 {
-               @include skillsTitle;
-            }
             p {
                 font-size: smaller;
-                padding: 3px;
-                text-align: center;
-            }
-            i {
-                @include skillsStyleLogoTitle
+                padding: 0px 0px 5px 20px;
+                width: 100%
             }
         }
         .contenair-hardSkills {
@@ -62,55 +53,46 @@
             .titleLogo {
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
-
                 h3 {
-                    @include skillsTitle;
+                    padding: 10px 0px; 
+                    color: #5c2e00;
+                    text-shadow: 0px 2px 2px $orange;
                 }
-
                 i {
                     @include skillsStyleLogoTitle
                 }
             }
       
             .fa-html5 {
-                font-size: 30px;
-                margin: 10px;
-                color: #e34c26;
+                @include styleLogo;
+                color: #e34c26;  
             }
             .fa-css3-alt {
-                font-size: 30px;
-                margin: 10px;
+                @include styleLogo;
                 color: #264de4;
             }
             .fa-square-js {
-                font-size: 30px;
-                margin: 10px;
+                @include styleLogo;
                 color: #d8c72f;
             }
             .fa-sass {
-                font-size: 30px;
-                margin: 10px;
+                @include styleLogo;
                 color: #cc6699;
             }
             .fa-square-git {
-                font-size: 30px;
-                margin: 10px;
+                @include styleLogo;
                 color: #f34f29;
             }
             .fa-square-github {
-                font-size: 30px;
-                margin: 10px;
+                @include styleLogo;
                 color: #171515;
             }
             .fa-react {
-                font-size: 30px;
-                margin: 10px;
+                @include styleLogo;
                 color: #61dbfb;
             }
             .fa-vuejs {
-                font-size: 30px;
-                margin: 10px;
+                @include styleLogo;
                 color:#41b883;
             }
         }

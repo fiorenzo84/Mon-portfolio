@@ -1,31 +1,26 @@
 // bouton télécharger mon cv
 .monCV {
-    cursor: pointer;
-    border: none;
-    font-style: italic;
-    font-weight: bold;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    width: 140px;
-    height: 35px;
+    border-radius: 50px;
     color: $black;
     font-family: "Raleway";
-    background: $whiteOrange;
+    background: $orange;
     margin-top: 15px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: oblique;
     &:hover {
-        // color: $orange;
-        background: $orange;
-        box-shadow: 0px 0px 15px $black;
-        transition: ease-out 0.7s;
+        color: black;
+        background: #ffcf73;
+        box-shadow: 0px 0px 5px $black;
+        transition: ease-out 0.5s;
+        font-weight: normal;
     }
     i {
         margin: 4px;
     }
 }
-
-// flèche pour remonter 
 // fleche pour remonter
 .btnupArrow i {
     font-size: 1.2rem;
@@ -34,7 +29,7 @@
     bottom: 0;
     right: 0;
     background-color: $orange;
-    padding: 20px;
+    padding: 15px;
     margin: 15px;
     border-radius: 50%;
     opacity: 0.6;

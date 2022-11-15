@@ -5,18 +5,51 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     font-size: 1.3rem; 
-    padding: 10px;
-    background-color: $black;
-    height: 90px;
+    margin-top: 30px;
+    height: 170px;
+    background-color: #ffcf001a;
+    box-shadow: $textShadowForText;
+
+    .background-img-footer {
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        object-fit: cover;
+        z-index: -1; 
+    }
+    h2 {
+        color: $orange;
+        padding: 10px;
+        font-size: 1.5rem;
+        text-shadow: 2px 7px 5px #000000, 0 0 0em #00000000, 0px 0px 0em black;
+    }
+    div {
+        display: flex;
+        align-items: center;
+        i {
+            color: $orange;
+        }
+    }
+    .mail {
+        padding: 10px;
+        font-size: 13px;
+        color: $whiteIvoire;
+    }
+    .contenair-socialMediaLogo {
+        width: 60px;
+        justify-content: space-around;
+        padding: 8px;
+    }
+
     a {
         text-decoration: none;
         color: $orange;
     }
-    p {
-        padding: 10px;
-        font-size: 10px;
+    .droit {
+        font-size: 8px;
         color: $whiteIvoire;
+        font-weight: normal;
     }
 }

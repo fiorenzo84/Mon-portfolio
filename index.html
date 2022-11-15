@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,7 +26,7 @@
           <li><a href="#contenair-Apropos">À propos</a></li>
           <li><a href="#contenair-skills">Skills</a></li>
           <li><a href="#contenair-projects">Projets</a></li>
-          <li><a href="#contenair-contact">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <!-- navigation sur smartphone (menu burger) -->
@@ -37,12 +37,11 @@
             <a href="#contenair-Apropos">À propos</a>
             <a href="#contenair-skills">Skills</a>
             <a href="#contenair-projects">Projets</a>
-            <a href="#contenair-contact">Contact</a>
+            <a href="#contact">Contact</a>
           </div>
         </div>
       </div>
     </header>
-    <!-- --------------------------------------------------- -->
     <!-- TITLE ACCUEIL-->
     <section id="contenair-title-and-logo">
       <img
@@ -66,33 +65,31 @@
         </a> -->
       </div>
     </section>
-    <!-- --------------------------------------------------- -->
     <!-- SECTION A PROPOS -->
     <section id="contenair-Apropos">
-      <h1>À propos</h1>
       <div>
         <img
           src="./assets/maPhotoSansFond.png"
           alt="photo de florent tuppo"
           class="myPicture" />
+        <h4>Hello, je m'appelle Florent Tuppo</h4>
         <p>
-          <strong>Hello, je m'appelle Florent Tuppo</strong>
-          développeur web junior passionné<br />
-          par les technologies,<br />
-          je poursuis ma reconversion professionnelle et mon apprentissage très
+          développeur web junior passionné par les technologies.<br />
+          Je poursuis ma reconversion professionnelle et mon apprentissage très
           passionnant aux métiers du numérique. <br />
           Disponible et à l'écoute je sais m’adapter aux exigences de mes
-          nouvelles fonctions. <i class="fa-solid fa-code"></i>
-          <a href="./assets/Florent.TuppoCV.png" download="CV Florent Tuppo">
-            <button class="monCV">
-              Télécharger CV
-              <i class="fa-solid fa-download"></i>
-            </button>
+          nouvelles fonctions. <i class="fa-solid fa-code"></i><br />
+          <br />
+          <a
+            href="./assets/Florent.TuppoCV.png"
+            class="monCV"
+            download="CV Florent Tuppo">
+            Télécharger CV
+            <i class="fa-solid fa-download"></i>
           </a>
         </p>
       </div>
     </section>
-    <!-- --------------------------------------------------- -->
     <!-- SECTION SKILLS -->
     <section id="contenair-skills">
       <img
@@ -107,15 +104,14 @@
       <!-- Block softskills -->
       <div class="contenair-allSkills">
         <div class="contenair-softSkills">
-          <div>
-            <h3>Soft Skills</h3>
-            <p>Autonomie</p>
-            <p>Rigueur</p>
-            <p>Curieux</p>
-            <p>Aisance relationnelles</p>
-            <p>Écoute et adaptabilité</p>
-            <p>Travail en équipe</p>
-          </div>
+          <h3>Soft Skills</h3>
+          <p>Autonomie</p>
+          <p>Rigueur</p>
+          <p>Curieux</p>
+          <p>Aisance relationnelles</p>
+          <p>Écoute et adaptabilité</p>
+          <p>Travail en équipe</p>
+
           <i class="fa-solid fa-circle-nodes"></i>
         </div>
         <!-- Block hardskills -->
@@ -124,74 +120,49 @@
             <h3>Hard Skills</h3>
             <i class="fa-solid fa-laptop"></i>
           </div>
-          <div class="langages">
-            <h5>Langages</h5>
-            <div class="langages-logo">
-              <span>
+          <div class="allContenairLogo">
+            <div class="langages">
+              <h5>Langages</h5>
+              <div class="langages-logo">
                 <i class="fa-brands fa-html5"></i>
-              </span>
-
-              <span>
                 <i class="fa-brands fa-css3-alt"></i>
-              </span>
-              <span>
                 <i class="fa-brands fa-square-js"></i>
-              </span>
-              <span>
                 <i class="fa-brands fa-sass"></i>
-              </span>
+              </div>
             </div>
-          </div>
-          <div class="versionning">
-            <h5>Versionning</h5>
-            <span>
+            <div class="versionning">
+              <h5>Versionning</h5>
               <i class="fa-brands fa-square-git"></i>
-            </span>
-            <span>
               <i class="fa-brands fa-square-github"></i>
-            </span>
-          </div>
-          <div class="frameworks">
-            <h5>Frameworks</h5>
-            <span>
+            </div>
+            <div class="frameworks">
+              <h5>Frameworks <span>(débutant)</span></h5>
               <i class="fa-brands fa-react"></i>
-            </span>
-            <span>
               <i class="fa-brands fa-vuejs"></i>
-            </span>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- --------------------------------------------------- -->
     <!-- SECTION PROJETS-->
     <section id="contenair-projects">
       <div class="contenair-title-projects">
         <span class="line"></span>
         <h1>Projets</h1>
       </div>
-      <article class="contenair-cards-projects"></article>
+      <div class="contenair-cards-projects"></div>
     </section>
-    <!-- --------------------------------------------------- -->
-    <!-- SECTION CONTACT-->
-    <section id="contenair-contact">
+    <!-- FOOTER -->
+    <footer id="contact">
       <img
         src="./assets/backGround.png"
         alt="image de fond"
-        class="background-img" />
-      <div class="contenair-title-contact">
-        <span class="line"></span>
-        <h1>Contact</h1>
-        <span class="line"></span>
-      </div>
+        class="background-img-footer" />
+      <h2>Contact</h2>
       <div>
         <i class="fa-solid fa-envelope"></i>
-        <p>Email : florent.tuppo@gmail.com</p>
+        <p class="mail">Email : florent.tuppo@gmail.com</p>
       </div>
-    </section>
-    <!-- --------------------------------------------------- -->
-    <!-- FOOTER -->
-    <footer>
       <div class="contenair-socialMediaLogo">
         <a href="https://github.com/fiorenzo84">
           <i class="fa-brands fa-square-github"></i>
@@ -200,9 +171,8 @@
           <i class="fa-brands fa-linkedin"></i>
         </a>
       </div>
-      <p>©2022 tous droits réservés</p>
+      <p class="droit">©2022 tous droits réservés</p>
     </footer>
-    <!-- --------------------------------------------------- -->
     <script type="module" src="index.js"></script>
     <script src="./js/cards.js"></script>
   </body>

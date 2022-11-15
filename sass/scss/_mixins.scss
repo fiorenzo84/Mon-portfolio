@@ -34,31 +34,30 @@
     }    
 }
 
-// softskills et hardskills title
-@mixin skillsTitle {
-  font-weight: normal;
-  font-style: italic;
-  padding: 5px;
-  text-shadow: $textShadowColorForNav;
-}
-
 // style du contenair softskills et hardskills
 @mixin skillsStyleContenair {
-  background: $whiteOrange;
-  padding: 15px;
+  background: linear-gradient(to top, #ffa80094, rgba(255, 255, 255, 0.5607843137)) no-repeat;
+  margin: 20px;
   border-radius: 10px;
   box-shadow: 0px 15px 15px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
 }
 
 // style du logo des titres softskills et hardskills
 @mixin skillsStyleLogoTitle {
-  font-size: 50px;
-  border: solid;
-  border-radius: 20px;
-  color: $orange;
+  font-size: 30px;
+  border-radius: 10px;
   padding: 10px;
+}
+
+// style des logo langages etc..
+@mixin styleLogo {
+  font-size: 40px;
   margin: 10px;
-  box-shadow: 0 0 10px;
+  text-shadow: 0px 2px 2px $black;
 }
     
     

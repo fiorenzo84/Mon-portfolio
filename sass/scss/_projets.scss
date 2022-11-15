@@ -1,7 +1,7 @@
 #contenair-projects {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // height: 100vh;
 
     .contenair-title-projects {
         background: $orange;
@@ -32,22 +32,22 @@
     .contenair-cards-projects{
         display: flex;
         flex-direction: column;
+        // align-items: center;
 
         .cards {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
             text-align: center;
             background-size: cover;
             margin: 25px;
             border-radius: 15px;
             box-shadow: 0px 5px 15px $black;
-
+            
             .styleBackground {
                 border-top-left-radius: 15px;
                 border-top-right-radius: 15px;
-                border: solid;
-                border-color: $whiteIvoire;
+                height: 100%;
             }
 
             .text-center {
