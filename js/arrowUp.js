@@ -16,4 +16,4 @@ function getArrowUpWindow() {
   });
 }
 
-export { getArrowUpWindow };
+getArrowUpWindow();

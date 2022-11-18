@@ -13,5 +13,3 @@ function toggleClassElements() {
     element.classList.toggle("remove-descriptif");
   });
 }
-
-export { toggleClassElements };

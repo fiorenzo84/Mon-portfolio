@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 .monCV {
   border-radius: 50px;
@@ -35,6 +36,11 @@
   opacity: 0.6;
   cursor: pointer;
 }
+.btnupArrow i:hover {
+  color: #fffff0;
+  background: #5c2e00;
+  transition: ease-in-out 0.4s;
+}
 
 *,
 ::before,
@@ -47,6 +53,7 @@
 body {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
+  width: 100%;
 }
 body .background-img {
   position: absolute;
@@ -122,19 +129,14 @@ body .background-img {
   width: 130px;
   text-align: center;
 }
-.navbar-desktop--ul :nth-child(4) {
-  padding-right: 50px;
-}
 .navbar-desktop--ul a {
   text-decoration: none;
   color: #0f0801;
-  text-shadow: -1px 3px 4px #9d5a0b, 0 0 0em #9d5a0b, 0px 0px 0em white;
 }
 
 .navbar-desktop--ul a:hover {
   color: #fffff0;
-  text-shadow: 1px 1px 2px black;
-  transition: ease-out 0.2s;
+  text-shadow: 0px 0px 4px black;
 }
 
 /* ----------NAVIGATION MOBILE -----------*/
@@ -198,12 +200,12 @@ body .background-img {
 }
 #contenair-title-and-logo .title {
   border-top-left-radius: 10px;
-  padding: 17px;
+  padding: 45px 10px;
   text-align: center;
   box-shadow: -20px -15px 20px rgba(0, 0, 0, 0.46);
 }
 #contenair-title-and-logo h1 {
-  text-shadow: 0px 10px 6px black;
+  font-size: 35px;
 }
 #contenair-title-and-logo .line {
   border: solid;
@@ -224,20 +226,21 @@ body .background-img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40px;
+  width: 50px;
   border-left: solid;
   border-width: 0.5mm;
+  padding-right: 15px;
 }
 #contenair-title-and-logo .logo i {
   color: #ffa800;
 }
 #contenair-title-and-logo .logo i:hover {
-  color: #0f0801;
-  text-shadow: 0px 0px 10px #ffa800, 0 0 0em #ffa800, 0px 0px 0em #0f0801;
+  color: #fffff0;
+  text-shadow: 2px 6px 5px #0f0801, 0 0 0em #ff8e09, 0px 0px 0em white;
   transition: ease-in-out 0.4s;
 }
 
-/* -- Apparition du menu burger sous 700px -- */
+/*********************** -- Apparition du menu burger sous 700px -- **********************/
 @media screen and (max-width: 700px) {
   .navbar-desktop {
     display: none;
@@ -246,27 +249,26 @@ body .background-img {
     display: block;
   }
 }
+/************************************* -- tablette -- ************************************/
 @media screen and (min-width: 701px) {
   #contenair-Apropos {
     padding-top: 10px;
     display: flex;
     align-content: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #ffa800, #fffff0) no-repeat;
   }
   #contenair-Apropos div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 25px;
     margin: 50px 75px;
     border-radius: 15px;
-    background: linear-gradient(to bottom, #ffa800, #fffff0) no-repeat;
+    border: solid;
+    border-width: 0.2mm;
   }
   #contenair-Apropos div h4 {
     width: 94%;
   }
   #contenair-skills .contenair-allSkills {
-    padding: 80px 50px;
+    padding: 80px 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -274,10 +276,19 @@ body .background-img {
   #contenair-skills .contenair-allSkills .contenair-softSkills {
     height: 50%;
     width: 80%;
+    transform: translateX(-150%);
+    transition: transform 0.7s ease-in-out;
+    opacity: 0.7s ease-in-out;
+  }
+  #contenair-skills .contenair-allSkills .contenair-softSkills.active {
+    transform: translateX(0%);
+    opacity: 1;
   }
   #contenair-skills .contenair-allSkills .contenair-hardSkills {
-    height: 80%;
     width: 100%;
+    transform: translateX(-250%);
+    transition: transform 0.6s ease-in-out;
+    opacity: 0.6s ease-in-out;
   }
   #contenair-skills .contenair-allSkills .contenair-hardSkills .allContenairLogo {
     height: 80%;
@@ -297,25 +308,96 @@ body .background-img {
   #contenair-skills .contenair-allSkills .contenair-hardSkills .allContenairLogo .frameworks {
     display: flex;
     flex-direction: column;
-    width: 70px;
   }
   #contenair-skills .contenair-allSkills .contenair-hardSkills .allContenairLogo h5 > span {
     font-size: 10px;
   }
+  #contenair-skills .contenair-allSkills .contenair-hardSkills.active {
+    transform: translateX(0%);
+    opacity: 1;
+    height: 80%;
+  }
   #contenair-projects .contenair-cards-projects {
     display: flex;
     flex-wrap: wrap;
-    height: 75vh;
     align-items: center;
+    justify-content: center;
+    padding: 60px 0px;
   }
   .cards {
     width: 290px;
   }
+  .cards:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+  }
 }
+/*********************************** -- écrans large -- **********************************/
+@media screen and (min-width: 992px) {
+  #contenair-title-and-logo h1 {
+    font-size: 50px;
+  }
+  #contenair-title-and-logo p {
+    font-size: 1rem;
+  }
+  #contenair-title-and-logo .title {
+    padding: 45px 45px;
+  }
+  #contenair-Apropos div {
+    margin: 70px 115px;
+  }
+  #contenair-Apropos div .myPicture {
+    width: 235px;
+    margin-top: 0px;
+  }
+  #contenair-Apropos div h4 {
+    margin: 50px 0px 5px 125px;
+    font-size: 1.7rem;
+  }
+  #contenair-Apropos div p {
+    margin: 0px 120px;
+    font-size: 1.7rem;
+    line-height: 40px;
+  }
+  #contenair-skills .contenair-allSkills {
+    padding: 0px;
+    font-size: 1.5rem;
+  }
+  #contenair-skills .contenair-allSkills .allContenairLogo h5 {
+    margin: 20px 20px 20px 0px;
+  }
+  #contenair-skills .contenair-allSkills .contenair-hardSkills .langages i {
+    font-size: 70px;
+  }
+  #contenair-skills .contenair-allSkills .contenair-hardSkills .versionning i {
+    font-size: 70px;
+  }
+  #contenair-skills .contenair-allSkills .contenair-hardSkills .frameworks i {
+    font-size: 70px;
+  }
+  .contenair-cards-projects .cards {
+    width: 350px;
+  }
+  #contact {
+    height: 300px;
+    font-size: 3rem;
+  }
+  #contact .mail {
+    font-size: 15px;
+  }
+  #contact .contenair-socialMediaLogo i {
+    margin: 5px;
+  }
+  #contact .contenair-socialMediaLogo i:hover {
+    color: #fffff0;
+    transition: ease-in-out 0.4s;
+  }
+  #contact .background-img-footer {
+    height: 40%;
+  }
+}
+/************************************** -- trés grand écrans -- *************************/
 /* ---------- SECTION A PROPOS ---------------- */
-#contenair-Apropos {
-  height: 100vh;
-}
 #contenair-Apropos div {
   text-align: center;
 }
@@ -326,8 +408,7 @@ body .background-img {
 #contenair-Apropos div p {
   color: #0f0801;
   font-weight: 300;
-  margin: 0px 30px 0px 30px;
-  line-height: 25px;
+  margin: 0px 30px 120px 30px;
   text-align: start;
 }
 #contenair-Apropos div p i {
@@ -349,6 +430,9 @@ body .background-img {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+}
+#contenair-skills .background-img {
+  filter: contrast(0.4);
 }
 #contenair-skills .contenair-title {
   display: flex;
@@ -376,13 +460,14 @@ body .background-img {
 }
 #contenair-skills .contenair-allSkills {
   height: 100vh;
+  z-index: -1;
 }
 #contenair-skills .contenair-allSkills .contenair-softSkills {
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(to top, rgba(255, 168, 0, 0.5803921569), rgba(255, 255, 255, 0.5607843137)) no-repeat;
+  background: linear-gradient(to top, #9d5a0b, #ffffff) no-repeat;
   margin: 20px;
   border-radius: 10px;
   box-shadow: 0px 15px 15px black;
@@ -392,8 +477,7 @@ body .background-img {
   padding: 15px;
 }
 #contenair-skills .contenair-allSkills .contenair-softSkills h3 {
-  color: #5c2e00;
-  text-shadow: 0px 2px 2px #ffa800;
+  color: #ffa800;
 }
 #contenair-skills .contenair-allSkills .contenair-softSkills div {
   width: 100%;
@@ -403,8 +487,10 @@ body .background-img {
   padding: 0px 0px 5px 20px;
   width: 100%;
 }
+#contenair-skills .contenair-allSkills .contenair-softSkills i {
+  color: #ffa800;
+}
 #contenair-skills .contenair-allSkills .contenair-hardSkills {
-  background: linear-gradient(to top, rgba(255, 168, 0, 0.5803921569), rgba(255, 255, 255, 0.5607843137)) no-repeat;
   margin: 20px;
   border-radius: 10px;
   box-shadow: 0px 15px 15px black;
@@ -412,67 +498,60 @@ body .background-img {
   flex-direction: column;
   justify-content: space-between;
   padding: 15px;
+  background: linear-gradient(to top, rgba(255, 168, 0, 0.5803921569), #ffffff) no-repeat;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .titleLogo {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .titleLogo h3 {
   padding: 10px 0px;
-  color: #5c2e00;
-  text-shadow: 0px 2px 2px #ffa800;
+  color: #ffa800;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .titleLogo i {
   font-size: 30px;
   border-radius: 10px;
   padding: 10px;
+  color: #ffa800;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .fa-html5 {
   font-size: 40px;
   margin: 10px;
-  text-shadow: 0px 2px 2px #0f0801;
   color: #e34c26;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .fa-css3-alt {
   font-size: 40px;
   margin: 10px;
-  text-shadow: 0px 2px 2px #0f0801;
   color: #264de4;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .fa-square-js {
   font-size: 40px;
   margin: 10px;
-  text-shadow: 0px 2px 2px #0f0801;
-  color: #d8c72f;
+  color: #beab00;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .fa-sass {
   font-size: 40px;
   margin: 10px;
-  text-shadow: 0px 2px 2px #0f0801;
   color: #cc6699;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .fa-square-git {
   font-size: 40px;
   margin: 10px;
-  text-shadow: 0px 2px 2px #0f0801;
   color: #f34f29;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .fa-square-github {
   font-size: 40px;
   margin: 10px;
-  text-shadow: 0px 2px 2px #0f0801;
   color: #171515;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .fa-react {
   font-size: 40px;
   margin: 10px;
-  text-shadow: 0px 2px 2px #0f0801;
   color: #61dbfb;
 }
 #contenair-skills .contenair-allSkills .contenair-hardSkills .fa-vuejs {
   font-size: 40px;
   margin: 10px;
-  text-shadow: 0px 2px 2px #0f0801;
   color: #41b883;
 }
 
@@ -503,10 +582,6 @@ body .background-img {
   border-left: none;
   border-right: none;
   margin-left: 10px;
-}
-#contenair-projects .contenair-cards-projects {
-  display: flex;
-  flex-direction: column;
 }
 #contenair-projects .contenair-cards-projects .cards {
   display: flex;
@@ -555,7 +630,7 @@ body .background-img {
   border-radius: 15px;
 }
 #contenair-projects .contenair-cards-projects .cards .contenair-logo a i:hover {
-  color: #0f0801;
+  background-color: #0f0801;
   transition: all 0.5s;
 }
 
@@ -569,7 +644,7 @@ footer {
   justify-content: center;
   font-size: 1.3rem;
   margin-top: 30px;
-  height: 170px;
+  height: 200px;
   background-color: rgba(255, 207, 0, 0.1019607843);
   box-shadow: 2px 6px 5px #0f0801, 0 0 0em #ff8e09, 0px 0px 0em white;
 }
@@ -596,6 +671,7 @@ footer div i {
 footer .mail {
   padding: 10px;
   font-size: 13px;
+  letter-spacing: 0.1rem;
   color: #fffff0;
 }
 footer .contenair-socialMediaLogo {

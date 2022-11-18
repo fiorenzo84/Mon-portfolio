@@ -1,4 +1,4 @@
-/* -- Apparition du menu burger sous 700px -- */
+/*********************** -- Apparition du menu burger sous 700px -- **********************/
 @media screen and (max-width: 700px) {
     
     .navbar-desktop {
@@ -9,22 +9,21 @@
     }
   }
 
-@media screen and (min-width: 701px){
+/************************************* -- tablette -- ************************************/
+@media screen and (min-width: 701px) {
 
   #contenair-Apropos {
     padding-top: 10px;
     display: flex;
     align-content: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #ffa800, #fffff0) no-repeat;
    
     div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 25px;
       margin: 50px 75px;
       border-radius: 15px;
-      background: linear-gradient(to bottom, #ffa800, #fffff0) no-repeat;
+      border: solid;
+      border-width: 0.2mm;
       h4 {
         width: 94%;
       }
@@ -32,7 +31,7 @@
   }
 
   #contenair-skills .contenair-allSkills {
-    padding: 80px 50px;
+    padding: 80px 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,12 +40,22 @@
   #contenair-skills .contenair-allSkills .contenair-softSkills {
     height: 50%;
     width: 80%;
+    transform: translateX(-150%);
+    transition: transform 0.7s ease-in-out;
+    opacity: 0.7s ease-in-out;
   }
+  #contenair-skills .contenair-allSkills .contenair-softSkills.active {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
   #contenair-skills .contenair-allSkills .contenair-hardSkills {
-    height: 80%;
+    // height: 80%;
     width: 100%;
+    transform: translateX(-250%);
+    transition: transform 0.6s ease-in-out;
+    opacity: 0.6s ease-in-out;
     .allContenairLogo {
-      // padding-bottom: 165px;
       height: 80%;
       text-align: center;
       display: flex;
@@ -63,21 +72,108 @@
       .frameworks {
         display: flex;
         flex-direction: column;
-        width: 70px;
       }
       h5 > span {
         font-size: 10px;
       }
     }
   }
+  #contenair-skills .contenair-allSkills .contenair-hardSkills.active {
+    transform: translateX(0%);
+    opacity: 1;
+    height: 80%;
+  }
   #contenair-projects .contenair-cards-projects {
     display: flex;
     flex-wrap: wrap;
-    height: 75vh;
     align-items: center;
+    justify-content: center;
+    padding: 60px 0px;
 
   }
   .cards {
     width: 290px;
   }
+  .cards:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+} 
+}
+
+/*********************************** -- écrans large -- **********************************/
+@media screen and (min-width: 992px) {
+  //Accueil
+  #contenair-title-and-logo h1 {
+    font-size: 50px;
+  }
+  #contenair-title-and-logo p {
+    font-size: 1rem;
+  }
+
+  #contenair-title-and-logo .title {
+    padding: 45px 45px;
+  }
+  //A propos
+  #contenair-Apropos div {
+    margin: 70px 115px;
+    .myPicture {
+      width: 235px;
+      margin-top: 0px;
+    }
+  }
+  #contenair-Apropos div h4 {
+    margin: 50px 0px 5px 125px;
+    font-size: 1.7rem;
+  }
+  #contenair-Apropos div p {
+    margin: 0px 120px;
+    font-size: 1.7rem;
+    line-height: 40px;
+  }
+  //Skills
+  #contenair-skills .contenair-allSkills {
+    padding: 0px;
+    font-size: 1.5rem;
+  }
+  #contenair-skills .contenair-allSkills .allContenairLogo h5 {
+    margin: 20px 20px 20px 0px;
+  }
+  #contenair-skills .contenair-allSkills .contenair-hardSkills .langages i{
+    font-size: 70px;
+  }
+  #contenair-skills .contenair-allSkills .contenair-hardSkills .versionning i{
+    font-size: 70px;
+  }
+  #contenair-skills .contenair-allSkills .contenair-hardSkills .frameworks i{
+    font-size: 70px;
+  }
+  //Projets 
+  .contenair-cards-projects .cards {
+    width: 350px;
+  }
+  //Footer 
+  #contact {
+    height: 300px;
+    font-size: 3rem;
+    .mail {
+      font-size: 15px;
+    }
+    .contenair-socialMediaLogo i {
+      margin: 5px;
+      &:hover {
+        color: $whiteIvoire;
+        transition: ease-in-out 0.4s;
+      }
+    }
+    .background-img-footer {
+      height: 40%;
+    }
+  }
+
+
+}
+
+/************************************** -- trés grand écrans -- *************************/
+@media screen and (min-width: 1200px) {
+
 }

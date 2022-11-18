@@ -34,4 +34,9 @@
     border-radius: 50%;
     opacity: 0.6;
     cursor: pointer;
+    &:hover {
+      color: $whiteIvoire;
+      background: #5c2e00;
+      transition: ease-in-out 0.4s;
+    }
 }
