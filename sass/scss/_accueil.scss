@@ -96,7 +96,7 @@
 }  
 
 /* ---------- TITRE ACCUEIL -----------*/
-#contenair-title-and-logo{
+#contenair-title-and-logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,10 +105,9 @@
   font-weight: normal;
   color: $orange;
   .title {
-    border-top-left-radius: 10px;
-    padding: 45px 10px;
+    border-radius: 10px;
+    padding: 45px 5px;
     text-align: center;
-    box-shadow: -20px -15px 20px rgb(0 0 0 / 46%);
   }
   h1 {
     font-size: 35px;
@@ -126,6 +125,8 @@
     font-size: 0.9rem;
     padding: 5px;
     font-weight: bold;
+    font-style: italic;
+    color: #fffff0c9;
   }
   .logo {
     display: flex;
@@ -136,13 +137,14 @@
     border-left: solid;
     border-width: 0.5mm;
     padding-right: 15px;
+  
     i{
       color: $orange;
-    }
-    i:hover {
-      color: $whiteIvoire;
-      text-shadow: $textShadowForText;
-      transition: ease-in-out 0.4s;
+      &:hover {
+        color: $whiteIvoire;
+        text-shadow: $textShadowForText;
+        transition: ease-in-out 0.4s;
+      }
     }
   }
-} 
+}

@@ -199,10 +199,9 @@ body .background-img {
   color: #ffa800;
 }
 #contenair-title-and-logo .title {
-  border-top-left-radius: 10px;
-  padding: 45px 10px;
+  border-radius: 10px;
+  padding: 45px 5px;
   text-align: center;
-  box-shadow: -20px -15px 20px rgba(0, 0, 0, 0.46);
 }
 #contenair-title-and-logo h1 {
   font-size: 35px;
@@ -220,6 +219,8 @@ body .background-img {
   font-size: 0.9rem;
   padding: 5px;
   font-weight: bold;
+  font-style: italic;
+  color: rgba(255, 255, 240, 0.7882352941);
 }
 #contenair-title-and-logo .logo {
   display: flex;
@@ -334,14 +335,19 @@ body .background-img {
 }
 /*********************************** -- écrans large -- **********************************/
 @media screen and (min-width: 992px) {
+  #contenair-title-and-logo {
+    justify-content: start;
+  }
   #contenair-title-and-logo h1 {
-    font-size: 50px;
+    font-size: 70px;
   }
   #contenair-title-and-logo p {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgba(255, 255, 240, 0.7882352941);
   }
   #contenair-title-and-logo .title {
-    padding: 45px 45px;
+    padding: 0px 45px;
   }
   #contenair-Apropos div {
     margin: 70px 115px;

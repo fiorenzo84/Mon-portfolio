@@ -103,15 +103,20 @@
 /*********************************** -- écrans large -- **********************************/
 @media screen and (min-width: 992px) {
   //Accueil
+  #contenair-title-and-logo {
+    justify-content: start;
+  }
   #contenair-title-and-logo h1 {
-    font-size: 50px;
+    font-size: 70px;
   }
   #contenair-title-and-logo p {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #fffff0c9;
   }
 
   #contenair-title-and-logo .title {
-    padding: 45px 45px;
+    padding: 0px 45px;
   }
   //A propos
   #contenair-Apropos div {
