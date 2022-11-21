@@ -284,6 +284,7 @@ body .background-img {
   #contenair-skills .contenair-allSkills .contenair-softSkills.active {
     transform: translateX(0%);
     opacity: 1;
+    height: auto;
   }
   #contenair-skills .contenair-allSkills .contenair-hardSkills {
     width: 100%;
@@ -316,7 +317,7 @@ body .background-img {
   #contenair-skills .contenair-allSkills .contenair-hardSkills.active {
     transform: translateX(0%);
     opacity: 1;
-    height: 80%;
+    height: auto;
   }
   #contenair-projects .contenair-cards-projects {
     display: flex;

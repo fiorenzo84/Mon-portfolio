@@ -6,6 +6,12 @@ class DataCards {
     this.backGroundImg = backGroundImg;
   }
 }
+const myObj = new DataCards(
+  "https://fiorenzo84.github.io/Mon-portfolio/",
+  "https://github.com/fiorenzo84/Mon-portfolio",
+  "./assets/portfolio.png"
+);
+
 const myObj1 = new DataCards(
   "https://fiorenzo84.github.io/Generateur-de-citations",
   "https://github.com/fiorenzo84/Generateur-de-citations",
@@ -22,16 +28,11 @@ const myObj3 = new DataCards(
   "https://github.com/fiorenzo84/Quiz",
   "./assets/quiz.png"
 );
-const myObj4 = new DataCards(
-  "https://fiorenzo84.github.io/Quiz/",
-  "https://github.com/fiorenzo84/Quiz",
-  "./assets/quiz.png"
-);
 
 /*---------------------Création des cartes------------------------*/
 const contenairCards = document.querySelector(".contenair-cards-projects");
 let cards = [];
-cards.push(myObj1, myObj2, myObj3, myObj4);
+cards.push(myObj, myObj1, myObj2, myObj3);
 
 cards.forEach((el) => {
   let allCards = document.createElement("figcaption");

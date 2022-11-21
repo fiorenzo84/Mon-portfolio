@@ -47,10 +47,10 @@
   #contenair-skills .contenair-allSkills .contenair-softSkills.active {
     transform: translateX(0%);
     opacity: 1;
+    height: auto;
   }
 
   #contenair-skills .contenair-allSkills .contenair-hardSkills {
-    // height: 80%;
     width: 100%;
     transform: translateX(-250%);
     transition: transform 0.6s ease-in-out;
@@ -81,7 +81,7 @@
   #contenair-skills .contenair-allSkills .contenair-hardSkills.active {
     transform: translateX(0%);
     opacity: 1;
-    height: 80%;
+    height: auto;
   }
   #contenair-projects .contenair-cards-projects {
     display: flex;
